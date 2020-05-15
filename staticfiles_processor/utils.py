@@ -27,7 +27,7 @@ def delete_dir(path):
     try:
         rmtree(path)
     except OSError as e:
-        if e.errno != errno.EEXIST:
+        if e.errno not in [errno.EEXIST, errno.ENOENT]:
             raise
 
 
