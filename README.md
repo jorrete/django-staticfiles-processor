@@ -1,11 +1,5 @@
 # django-staticfiles-processor (alpha)
 
-## Install
-
-```bash
-pip install django-staticfiles-processor
-```
-
 ## Description
 
 Inspired in the old [django-staticfilesplus](https://github.com/evansd/django-staticfilesplus) package.
