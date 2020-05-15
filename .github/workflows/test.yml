@@ -26,7 +26,7 @@ jobs:
         pip install flake8 tox
 
     - name: check with flake8
-      run: flake8 ./cache_helpers
+      run: flake8 ./staticfiles_processor
 
     - name: Test with tox
       run: tox
