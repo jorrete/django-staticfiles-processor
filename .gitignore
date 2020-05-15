@@ -1,0 +1,12 @@
+*.egg-info
+*.pyc
+__pycache__/
+assets
+db.sqlite3
+venv/
+.tox/
+.pytest_cache/
+.hypothesis/
+node_modules/
+package-lock.json
+assets/

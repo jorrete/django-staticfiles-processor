@@ -1,0 +1,5 @@
+{
+    "name": "staticfiles",
+    "description": "Django app.",
+    "debug": true
+}

@@ -1,0 +1,27 @@
+{
+  "name": "myexample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "dependencies": {
+    "autoprefixer": "^9.4.10",
+    "color": "^3.1.2",
+    "postcss": "^7.0.14",
+    "postcss-color-function": "^4.0.1",
+    "postcss-css-variables": "^0.12.0",
+    "postcss-import": "^12.0.1",
+    "rollup": "^1.6.0",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-html": "^0.2.1",
+    "rollup-plugin-includepaths": "^0.2.3",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-postcss": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
