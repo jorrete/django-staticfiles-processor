@@ -12,9 +12,8 @@ class FindTest(TestCase):
 
     def test_file_matching(self):
         """Check if can find a file to be processed"""
-        path = finders.find('myapp/css/index.postcss.css')
+        path = finders.find('mydata.json')
         self.assertIsNotNone(path)
-        self.assertRegex(read_file(path), 'blue')
 
 
 class MultipleMatchTest(TestCase):
