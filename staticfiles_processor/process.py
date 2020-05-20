@@ -4,7 +4,7 @@ from os import utime
 from django.utils.module_loading import import_string
 
 from .utils import copy_file, mkdir, get_stat
-from .settings import STATICFILES_BUILD, STATICFILES_PROCESSORS, STATICFILES_PROCESSORS_CACHE
+from .settings import STATICFILES_BUILD, STATICFILES_PROCESSORS, STATICFILES_PROCESSORS_CACHE, logger
 
 
 processors = [(import_string(p) if type(p) == str else p)() for p in STATICFILES_PROCESSORS]
@@ -24,6 +24,8 @@ def process_path(path, match):
     matched_processors = [
             p for p in processors
             if p.check_match(path, match)]
+
+    logger.info('[staticfiles_processor] {}'.format(path))
 
     if not len(matched_processors):
         return match
