@@ -25,10 +25,10 @@ def process_path(path, match):
             p for p in processors
             if p.check_match(path, match)]
 
-    logger.info('[staticfiles_processor] {}'.format(path))
-
     if not len(matched_processors):
         return match
+
+    logger.info('[staticfiles_processor] {}'.format(path))
 
     processed_path = join(STATICFILES_BUILD, path)
 
